@@ -42,7 +42,7 @@ docker run -d -p 9000:9000 sonarqube
 
 To generate sonar report with default port and host (http://localhost:9000)
 ```bash
-mvn test sonar:sonar
+mvn test sonar:sonar -Dsonar.login=admin -Dsonar.password=pass
 ```
 
 To generate sonar report with remote server
